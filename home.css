@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Home e logo  */
+
+#home-header{
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#fff;
+}
+
+#home-nav{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff; 
+}
+
+.home-logo{
+    height: 100px;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.home-logo-img{
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* fim logo 
+
+================================== 
+
+bucar  */
+
+.home-buscar{
+    height: 100px;
+    width: 60vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #fff; 
+}
+
+.home-corpo-buscar{
+    height: 50px;
+    width: 55vw;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 55px;
+}
+
+.home-box-icones-bucsar{
+    height: 50px;
+    width: 55vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    margin-right: 35px;
+}
+
+.home-linha-divisao{
+    -webkit-transform: rotate(90deg); /* Safari and Chrome */
+    -moz-transform: rotate(90deg);   /* Firefox */
+    -ms-transform: rotate(90deg);   /* IE 9 */
+    -o-transform: rotate(90deg);   /* Opera */
+    transform: rotate(90deg);
+}
+
+.home-buscar-img{
+    height: 25px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.home-input{
+    height: 35px;
+    width: 640px;
+    margin-left: 15px;
+}
+/* fim buscar
+
+================================== 
+
+login  */
+
+.home-corpo-login{
+    height: 100px;
+    width: 25vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;  
+}
+
+.home-login{
+    height: 50px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;  
+}
+
+.home-crie-evento{
+    height: 95px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff  
+}
+
+/* fim do header
+
+================== 
+
+banner  */
+
+#home-banner{
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; 
+}
+
+.home-banner-img{
+    height: 100%;
+    width: 100%; 
+}
+
+/* fim do banner */
