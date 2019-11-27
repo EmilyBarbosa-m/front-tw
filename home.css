@@ -1,29 +1,30 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
+
 /* Home e logo  */
 
-#home-header{
+#home-header {
     height: 120px;
     width: 99vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color:#fff;
+    background-color: #fff;
 }
 
-#home-nav{
+#home-nav {
     height: 100px;
     width: 98vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #fff; 
+    background-color: #fff;
 }
 
-.home-logo{
+.home-logo {
     height: 100px;
     width: 5vw;
     display: flex;
@@ -32,7 +33,7 @@
     background-color: #fff;
 }
 
-.home-logo-img{
+.home-logo-img {
     height: 90px;
     width: 90px;
     display: flex;
@@ -40,49 +41,54 @@
     align-items: center;
 }
 
+
 /* fim logo 
 
 ================================== 
 
 bucar  */
 
-.home-buscar{
+.home-buscar {
     height: 100px;
     width: 60vw;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    background-color: #fff; 
+    background-color: #fff;
 }
 
-.home-corpo-buscar{
+.home-corpo-buscar {
     height: 50px;
     width: 55vw;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     background-color: #fff;
     border-radius: 55px;
 }
 
-.home-box-icones-bucsar{
+.home-box-icones-bucsar {
     height: 50px;
     width: 55vw;
     display: flex;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
     margin-right: 35px;
 }
 
-.home-linha-divisao{
-    -webkit-transform: rotate(90deg); /* Safari and Chrome */
-    -moz-transform: rotate(90deg);   /* Firefox */
-    -ms-transform: rotate(90deg);   /* IE 9 */
-    -o-transform: rotate(90deg);   /* Opera */
+.home-linha-divisao {
+    -webkit-transform: rotate(90deg);
+    /* Safari and Chrome */
+    -moz-transform: rotate(90deg);
+    /* Firefox */
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -o-transform: rotate(90deg);
+    /* Opera */
     transform: rotate(90deg);
 }
 
-.home-buscar-img{
+.home-buscar-img {
     height: 25px;
     width: 30px;
     display: flex;
@@ -91,43 +97,53 @@ bucar  */
     margin-left: 15px;
 }
 
-.home-input{
+.home-input {
     height: 35px;
     width: 640px;
     margin-left: 15px;
+    border-radius: 50px;
+    border: 1px solid gray;
 }
+
+.home-input::placeholder {
+    display: flex;
+    justify-content: center;
+}
+
+
 /* fim buscar
 
 ================================== 
 
 login  */
 
-.home-corpo-login{
+.home-corpo-login {
     height: 100px;
     width: 25vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #fff;  
+    background-color: #fff;
 }
 
-.home-login{
+.home-login {
     height: 50px;
     width: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;  
+    background-color: #fff;
 }
 
-.home-crie-evento{
+.home-crie-evento {
     height: 95px;
     width: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#fff  
+    background-color: #fff
 }
+
 
 /* fim do header
 
@@ -135,16 +151,17 @@ login  */
 
 banner  */
 
-#home-banner{
+#home-banner {
     height: 500px;
     width: 99vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff; 
+    background-color: #fff;
     position: relative;
 }
-#home-banner-transparente{
+
+#home-banner-transparente {
     height: 300px;
     width: 700px;
     display: flex;
@@ -155,22 +172,24 @@ banner  */
     margin-top: -90px;
 }
 
-.home-banner-img{
+.home-banner-img {
     height: 99%;
-    width: 100%; 
+    width: 100%;
 }
 
-.home-logoarte-img{
-    margin-left: -390px ;
+.home-logoarte-img {
+    margin-left: -390px;
 }
+
 
 /* fim do banner */
 
- /* ==================================== 
+
+/* ==================================== 
 
 destaque  */
 
-#home-section-destaque{
+#home-section-destaque {
     width: 99vw;
     height: 600px;
     background-color: aqua;
@@ -180,7 +199,7 @@ destaque  */
     flex-direction: column;
 }
 
-.home-box-texto-destaque{
+.home-box-texto-destaque {
     width: 80vw;
     height: 80px;
     background-color: #fff;
@@ -188,33 +207,34 @@ destaque  */
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
-.home-texto-destaque{
+.home-texto-destaque {
     width: 50vw;
     height: 80px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-.home-destaque-hr{
+.home-destaque-hr {
     width: 50vw;
     height: 0.3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue solid ; 
+    background-color: blue solid;
 }
+
 
 /* fim do destaque */
 
- /* ==================================== 
+
+/* ==================================== 
 
 beneficios */
 
-#home-section-beneficios{
+#home-section-beneficios {
     width: 99vw;
     height: 2000px;
     background-color: red;
@@ -224,7 +244,7 @@ beneficios */
     flex-direction: column;
 }
 
-.home-box-texto-beneficios{
+.home-box-texto-beneficios {
     width: 80vw;
     height: 150px;
     background-color: #fff;
@@ -234,46 +254,46 @@ beneficios */
     flex-direction: column;
 }
 
-.home-texto-h2-beneficios{
+.home-texto-h2-beneficios {
     width: 50vw;
     height: 80px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-.home-beneficios-hr{
+.home-beneficios-hr {
     width: 50vw;
     height: 0.3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue solid ; 
+    background-color: blue solid;
 }
 
-.home-texto-p-beneficios{
+.home-texto-p-beneficios {
     width: 50vw;
     height: 80px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
- /* ==================================== 
+
+/* ==================================== 
 
 beneficios imagem 1*/
 
-#home-section-img1-beneficios{
+#home-section-img1-beneficios {
     width: 80vw;
     height: 900px;
     background-color: #ff4040;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
-#home-box-img1-beneficios{
+#home-box-img1-beneficios {
     width: 100vw;
     height: 900px;
     background-color: #ff2020;
@@ -282,7 +302,7 @@ beneficios imagem 1*/
     align-items: center;
 }
 
-.home-box-img1-beneficios{
+.home-box-img1-beneficios {
     width: 80vw;
     height: 600px;
     background-color: blue;
@@ -292,36 +312,36 @@ beneficios imagem 1*/
     box-sizing: border-box;
 }
 
-.home-caixa-img1-beneficios{
+.home-caixa-img1-beneficios {
     width: 400px;
     height: 400px;
     background-color: green;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     margin-left: -90px;
     position: relative;
     border-radius: 10px;
 }
 
-.home-div-img1-transparente{
+.home-div-img1-transparente {
     width: 400px;
     height: 400px;
     background-color: transparent;
     display: flex;
     justify-content: flex-start;
-    align-items: center; 
+    align-items: center;
     margin-top: 70px;
     position: absolute;
 }
 
-.home-beneficios1-img{
+.home-beneficios1-img {
     width: 390px;
     height: 390px;
     border-radius: 10px;
 }
 
-.home-box-texto-beneficios-img1{
+.home-box-texto-beneficios-img1 {
     width: 80vw;
     height: 300px;
     background-color: green;
@@ -331,7 +351,7 @@ beneficios imagem 1*/
     flex-direction: column;
 }
 
-.home-box-texto-p1-beneficios{
+.home-box-texto-p1-beneficios {
     width: 400px;
     height: 300px;
     background-color: #ff4040;
@@ -340,10 +360,12 @@ beneficios imagem 1*/
     justify-content: center;
 }
 
- /* ==================================== 
+
+/* ==================================== 
 
 beneficios imagem 2*/
-#home-section-img2-beneficios{
+
+#home-section-img2-beneficios {
     width: 80vw;
     height: 900px;
     background-color: orange;
@@ -351,20 +373,18 @@ beneficios imagem 2*/
     justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
-    
 }
 
-#home-box-img2-beneficios{
+#home-box-img2-beneficios {
     width: 100vw;
     height: 900px;
     background-color: #ff2020;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
-.home-box-img2-beneficios{
+.home-box-img2-beneficios {
     width: 80vw;
     height: 600px;
     background-color: blue;
@@ -374,36 +394,36 @@ beneficios imagem 2*/
     box-sizing: border-box;
 }
 
-.home-caixa-img2-beneficios{
+.home-caixa-img2-beneficios {
     width: 400px;
     height: 400px;
     background-color: green;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     margin-left: -90px;
     position: relative;
     border-radius: 10px;
 }
 
-.home-div-img2-transparente{
+.home-div-img2-transparente {
     width: 400px;
     height: 400px;
     background-color: transparent;
     display: flex;
     justify-content: flex-start;
-    align-items: center; 
+    align-items: center;
     margin-top: 70px;
     position: absolute;
 }
 
-.home-beneficios2-img{
+.home-beneficios2-img {
     width: 390px;
     height: 390px;
     border-radius: 10px;
 }
 
-.home-box-texto-beneficios-img2{
+.home-box-texto-beneficios-img2 {
     width: 80vw;
     height: 300px;
     background-color: green;
@@ -413,7 +433,7 @@ beneficios imagem 2*/
     flex-direction: column;
 }
 
-.home-box-texto-p2-beneficios{
+.home-box-texto-p2-beneficios {
     width: 400px;
     height: 300px;
     background-color: #ff4040;
@@ -422,13 +442,15 @@ beneficios imagem 2*/
     justify-content: center;
 }
 
+
 /* fim do beneficios */
 
- /* ==================================== 
+
+/* ==================================== 
 
   contador */
 
- #home-section-contador{
+#home-section-contador {
     width: 100vw;
     height: 400px;
     background-color: blue;
@@ -437,118 +459,189 @@ beneficios imagem 2*/
     align-items: center;
     box-sizing: border-box;
     position: relative;
- }
+}
 
- .home-contador-img{
+.home-contador-img {
     width: 100vw;
     height: 390px;
- }
+}
 
- .home-section-box-contador{
+.home-section-box-contador {
     width: 100vw;
     height: 250px;
-    background-color:#fff;
+    background-color: rgba(255, 255, 255, 0.342);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     position: absolute;
     align-items: center;
     flex-direction: column;
- }
+}
 
- .home-contador-icones{
+.home-contador-icones {
     width: 70vw;
     height: 70px;
     background-color: transparent;
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     position: absolute;
- }
+    margin-top: -70px;
+}
 
- .home-contador-icone-img1{
-    width: 50px;
-    height: 50px; 
- }
-
- .home-contador-icone-img2{
-    width: 50px;
-    height: 50px; 
- }
-
- .home-contador-icone-img3{
-    width: 50px;
-    height: 50px; 
- }
-
- .home-contador-icone-img4{
-    width: 50px;
-    height: 50px; 
- }
-
- .home-contador-numeros{
-    width: 85vw;
-    height: 70px;
-    background-color: red;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;  
-    align-items: center; 
- }
-
- .home-contador-icone-p1{
+.home-contador-icone-img1 {
     width: 50px;
     height: 50px;
-    font-weight: bold;
-    font-size: 25px;    
- }
- 
- .home-contador-icone-p2{
+}
+
+.home-contador-icone-img2 {
     width: 50px;
     height: 50px;
-    font-weight: bold;
-    font-size: 25px;     
- }
+}
 
- .home-contador-icone-p3{
+.home-contador-icone-img3 {
     width: 50px;
-    height: 50px; 
-    font-weight: bold;
-    font-size: 25px;    
- }
+    height: 50px;
+}
 
- .home-contador-icone-p4{
+.home-contador-icone-img4 {
     width: 50px;
-    height: 50px; 
-    font-weight: bold;
-    font-size: 25px;    
- }
- 
- .home-contador-descricao{
-    width: 80vw;
+    height: 50px;
+}
+
+.home-contador-numeros {
+    width: 70vw;
     height: 70px;
     background-color: transparent;
     display: flex;
     justify-content: space-around;
-    position: absolute;  
-    align-items: center; 
- }
+    align-items: center;
+    position: absolute;
+}
 
- .home-contador-descricao-h3-1{
-    width: 50px;
-    height: 50px;    
- }
- 
- .home-contador-descricao-h3-2{
-    width: 50px;
-    height: 50px;    
- }
+.home-contador-icone-p1 {
+    width: 70px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+}
 
- .home-contador-descricao-h3-3{
-    width: 50px;
-    height: 50px;    
- }
+.home-contador-icone-p2 {
+    width: 70px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+}
 
- .home-contador-descricao-h3-4{
+.home-contador-icone-p3 {
+    width: 70px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.home-contador-icone-p4 {
+    width: 70px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.home-contador-descricao {
+    width: 70vw;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.home-contador-descricao-h3-1 {
     width: 50px;
-    height: 50px;    
- }
+    height: 50px;
+}
+
+.home-contador-descricao-h3-2 {
+    width: 50px;
+    height: 50px;
+}
+
+.home-contador-descricao-h3-3 {
+    width: 50px;
+    height: 50px;
+}
+
+.home-contador-descricao-h3-4 {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ============= mobile  */
+
+#home-section-mobile {
+    width: 99vw;
+    height: 800px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-section-mobile-texto {
+    width: 80vw;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section-mobile-texto-p {
+    width: 50vw;
+    height: 80px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section-mobile-box {
+    width: 100vw;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.192);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-section-mobile-box-texto {
+    width: 55vw;
+    height: 540px;
+    background-color: rgba(255, 255, 255, 0.192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 90px;
+}
+
+.home-section-mobile-box-texto-p {
+    width: 450px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-section-mobile-img {
+    width: 620px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+}
