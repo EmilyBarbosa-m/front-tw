@@ -7,7 +7,7 @@
 
 #home-header{
     height: 120px;
-    width: 100vw;
+    width: 99vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -16,7 +16,7 @@
 
 #home-nav{
     height: 100px;
-    width: 100vw;
+    width: 98vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -137,16 +137,418 @@ banner  */
 
 #home-banner{
     height: 500px;
-    width: 100vw;
+    width: 99vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff; 
+    position: relative;
+}
+#home-banner-transparente{
+    height: 300px;
+    width: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    margin-top: -90px;
 }
 
 .home-banner-img{
-    height: 100%;
+    height: 99%;
     width: 100%; 
 }
 
+.home-logoarte-img{
+    margin-left: -390px ;
+}
+
 /* fim do banner */
+
+ /* ==================================== 
+
+destaque  */
+
+#home-section-destaque{
+    width: 99vw;
+    height: 600px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-box-texto-destaque{
+    width: 80vw;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.home-texto-destaque{
+    width: 50vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.home-destaque-hr{
+    width: 50vw;
+    height: 0.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue solid ; 
+}
+
+/* fim do destaque */
+
+ /* ==================================== 
+
+beneficios */
+
+#home-section-beneficios{
+    width: 99vw;
+    height: 2000px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-box-texto-beneficios{
+    width: 80vw;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-texto-h2-beneficios{
+    width: 50vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.home-beneficios-hr{
+    width: 50vw;
+    height: 0.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue solid ; 
+}
+
+.home-texto-p-beneficios{
+    width: 50vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+ /* ==================================== 
+
+beneficios imagem 1*/
+
+#home-section-img1-beneficios{
+    width: 80vw;
+    height: 900px;
+    background-color: #ff4040;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#home-box-img1-beneficios{
+    width: 100vw;
+    height: 900px;
+    background-color: #ff2020;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-box-img1-beneficios{
+    width: 80vw;
+    height: 600px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.home-caixa-img1-beneficios{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: -90px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.home-div-img1-transparente{
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    margin-top: 70px;
+    position: absolute;
+}
+
+.home-beneficios1-img{
+    width: 390px;
+    height: 390px;
+    border-radius: 10px;
+}
+
+.home-box-texto-beneficios-img1{
+    width: 80vw;
+    height: 300px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-box-texto-p1-beneficios{
+    width: 400px;
+    height: 300px;
+    background-color: #ff4040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* ==================================== 
+
+beneficios imagem 2*/
+#home-section-img2-beneficios{
+    width: 80vw;
+    height: 900px;
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    
+}
+
+#home-box-img2-beneficios{
+    width: 100vw;
+    height: 900px;
+    background-color: #ff2020;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.home-box-img2-beneficios{
+    width: 80vw;
+    height: 600px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.home-caixa-img2-beneficios{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: -90px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.home-div-img2-transparente{
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    margin-top: 70px;
+    position: absolute;
+}
+
+.home-beneficios2-img{
+    width: 390px;
+    height: 390px;
+    border-radius: 10px;
+}
+
+.home-box-texto-beneficios-img2{
+    width: 80vw;
+    height: 300px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-box-texto-p2-beneficios{
+    width: 400px;
+    height: 300px;
+    background-color: #ff4040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* fim do beneficios */
+
+ /* ==================================== 
+
+  contador */
+
+ #home-section-contador{
+    width: 100vw;
+    height: 400px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+ }
+
+ .home-contador-img{
+    width: 100vw;
+    height: 390px;
+ }
+
+ .home-section-box-contador{
+    width: 100vw;
+    height: 250px;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .home-contador-icones{
+    width: 70vw;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    position: absolute;
+ }
+
+ .home-contador-icone-img1{
+    width: 50px;
+    height: 50px; 
+ }
+
+ .home-contador-icone-img2{
+    width: 50px;
+    height: 50px; 
+ }
+
+ .home-contador-icone-img3{
+    width: 50px;
+    height: 50px; 
+ }
+
+ .home-contador-icone-img4{
+    width: 50px;
+    height: 50px; 
+ }
+
+ .home-contador-numeros{
+    width: 85vw;
+    height: 70px;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;  
+    align-items: center; 
+ }
+
+ .home-contador-icone-p1{
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;    
+ }
+ 
+ .home-contador-icone-p2{
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;     
+ }
+
+ .home-contador-icone-p3{
+    width: 50px;
+    height: 50px; 
+    font-weight: bold;
+    font-size: 25px;    
+ }
+
+ .home-contador-icone-p4{
+    width: 50px;
+    height: 50px; 
+    font-weight: bold;
+    font-size: 25px;    
+ }
+ 
+ .home-contador-descricao{
+    width: 80vw;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;  
+    align-items: center; 
+ }
+
+ .home-contador-descricao-h3-1{
+    width: 50px;
+    height: 50px;    
+ }
+ 
+ .home-contador-descricao-h3-2{
+    width: 50px;
+    height: 50px;    
+ }
+
+ .home-contador-descricao-h3-3{
+    width: 50px;
+    height: 50px;    
+ }
+
+ .home-contador-descricao-h3-4{
+    width: 50px;
+    height: 50px;    
+ }
