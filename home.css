@@ -3,25 +3,9 @@
     margin: 0;
 }
 
-
-/* Home e logo  */
-
-#home-header {
-    height: 120px;
-    width: 99vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+body{
     background-color: #fff;
-}
-
-#home-nav {
-    height: 100px;
-    width: 98vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
+    overflow-x: hidden;
 }
 
 .home-logo {
@@ -42,114 +26,204 @@
 }
 
 
-/* fim logo 
-
-================================== 
-
-bucar  */
-
-.home-buscar {
-    height: 100px;
-    width: 60vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-}
-
-.home-corpo-buscar {
-    height: 50px;
-    width: 55vw;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 55px;
-}
-
-.home-box-icones-bucsar {
-    height: 50px;
-    width: 55vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-right: 35px;
-}
-
-.home-linha-divisao {
-    -webkit-transform: rotate(90deg);
-    /* Safari and Chrome */
-    -moz-transform: rotate(90deg);
-    /* Firefox */
-    -ms-transform: rotate(90deg);
-    /* IE 9 */
-    -o-transform: rotate(90deg);
-    /* Opera */
-    transform: rotate(90deg);
-}
-
-.home-buscar-img {
-    height: 25px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
-}
-
-.home-input {
-    height: 35px;
-    width: 640px;
-    margin-left: 15px;
-    border-radius: 50px;
-    border: 1px solid gray;
-}
-
-.home-input::placeholder {
-    display: flex;
-    justify-content: center;
-}
-
-
-/* fim buscar
-
-================================== 
-
-login  */
-
-.home-corpo-login {
-    height: 100px;
-    width: 25vw;
+#home-header {
+    height: 120px;
+    width: 99vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #fff;
 }
 
-.home-login {
-    height: 50px;
-    width: 75px;
+ul.topnav {
+    background:#fff;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 6.4 em;
+		line-height: 4em;
+    width:100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-}
+    justify-content: space-around;
+	}
 
-.home-crie-evento {
-    height: 95px;
-    width: 125px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff
-}
+	/* Coloca os itens da lista do Menu lado a lado, e flutua os itens para a esquerda */
+	ul.topnav li {
+				display: flex;
+				/* margin-left: 0.5em; */
+				font-size: 0.9em;
+        float:left;
+	}
 
+	/* Estilo dos links dentro da lista */
+	ul.topnav li a {
+		display: block;
+		color: #000;
+		text-decoration: none;
+		height: 3em;
+		line-height: 3em;
+		/* padding: 0 0.3em 0 0.3em; */
+		outline: 0;
+	}
 
-/* fim do header
+	/* Altera a cor do link quando passa o mouse em cima*/
+	ul.topnav li a:hover {color:#FFB9DC;}
 
-================== 
+	/* Esconde os itens da lista quando a resolução da tela for pequena */
+	ul.topnav li.icon {display: none;}
+	
+    /* Quando a tela é menor do que 680 pixels de largura, ocultar todos os itens da lista. Mostra o item da lista que contém o link para abrir e fechar a nav superior (li.icon) */
+    
+		@media screen and (max-width:680px) {
+		  ul.topnav li {display: none;}
+		  ul.topnav li.icon {
+			float: right;/*O ícone será exibido ao lado direito*/
+			display: inline-block;
+		  }
+		}
 
-banner  */
+		/*A classe responsiva é adicionada à ul superior com o JavaScript quando o usuário clica no ícone. Esta classe faz com que os itens principais do menu fiquem ok em telas menores */
+		@media screen and (max-width:680px) {
+		  ul.topnav.responsive {
+			position: relative;
+			background: #fff; /*Fundo cinza*/
+			height:auto;
+			padding-top:15px;
+			padding-bottom:10px;
+			line-height:5px;
+			width:100%;
+			
+		  }
+		  ul.topnav.responsive li.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		  }
+		  ul.topnav.responsive li {
+			 text-align:center; 
+			float: none;
+			padding:0;
+			display: inline;
+			
+		  }
+		  ul.topnav.responsive li a {
+			display: block;
+			padding:0;
+			text-align: left;
+			line-height:30px;
+			text-align:center;
+		  }
+        } /*FIM DO MENU RESPONSIVO*/
+
+        /* ================ buscar */
+
+        .home-buscar {
+            height: 100px;
+            width: 60vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        
+        .home-corpo-buscar {
+            height: 50px;
+            width: 55vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 55px;
+        }
+        
+        .home-box-icones-bucsar {
+            height: 50px;
+            width: 55vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-right: 35px;
+        }
+        
+        .home-linha-divisao {
+            -webkit-transform: rotate(90deg);
+            /* Safari and Chrome */
+            -moz-transform: rotate(90deg);
+            /* Firefox */
+            -ms-transform: rotate(90deg);
+            /* IE 9 */
+            -o-transform: rotate(90deg);
+            /* Opera */
+            transform: rotate(90deg);
+        }
+        
+        .home-buscar-img {
+            height: 25px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+        }
+        
+        .home-input {
+            height: 35px;
+            width: 640px;
+            margin-left: 15px;
+            border-radius: 50px;
+            border: 1px solid gray;
+        }
+        
+        .home-input::placeholder {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* ============ login crie seu login  */
+        
+        .home-corpo-login {
+            height: 100px;
+            width: 25vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #fff;
+        }
+        
+        .home-login {
+            height: 50px;
+            width: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        
+        .home-crie-evento {
+            height: 95px;
+            width: 125px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff
+        }      
+        
+        .home-button-crie-evento-header1{
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home-button-crie-evento-header2{
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .home-button-crieEvento{
+            margin-right: 70px;
+        }
+/* ================== 
+
+banner   */
 
 #home-banner {
     height: 500px;
@@ -191,7 +265,7 @@ destaque  */
 
 #home-section-destaque {
     width: 99vw;
-    height: 600px;
+    height: 900px;
     background-color: aqua;
     display: flex;
     justify-content: center;
@@ -201,7 +275,7 @@ destaque  */
 
 .home-box-texto-destaque {
     width: 80vw;
-    height: 80px;
+    height: 120px;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -225,6 +299,41 @@ destaque  */
     align-items: center;
     background-color: blue solid;
 }
+
+/* ========= carrousel  */
+
+#home-section-carrosel{
+    width: 90vw;
+    height: 680px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========= css carrousel  */
+
+.slick-slide img{
+    width: 100%;
+}
+
+.slick-slide{
+    margin: 30px 15px;
+}
+
+.slick-doots li button::before,
+.slick-doots li.slick-active button:before{
+    color: #fff;
+}
+
+.slick-doots li button:before{
+    font-size: 15px;
+}
+
+
+
+/* ========= css carrousel  */
+
 
 
 /* fim do destaque */
@@ -597,11 +706,21 @@ beneficios imagem 2*/
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.home-section-mobile-texto-p {
-    width: 50vw;
-    height: 80px;
+.home-section-mobile-texto-p-button1 {
+    width: 35vw;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section-mobile-texto-p-button2 {
+    width: 35vw;
+    height: 40px;
     background-color: red;
     display: flex;
     justify-content: center;
@@ -635,6 +754,16 @@ beneficios imagem 2*/
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    border: 1px solid black;
+    border-radius: 30PX;
+}
+
+.home-section-mobile-box-p{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-section-mobile-img {
@@ -644,4 +773,120 @@ beneficios imagem 2*/
     justify-content: center;
     align-items: center;
     margin-top: -60px;
+}
+
+.home-section-mobile-button-final{
+    margin-top: 30px;
+}
+
+/* =============  fim mobile  
+
+================
+
+footer */
+
+#home-footer{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff2020;
+    flex-direction: column;
+}
+
+
+.home-footer-box1{
+    width: 100vw;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    flex-direction: column;
+}
+
+.home-footer-titulo{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red; 
+}
+
+.home-footer-informacao{
+    width: 100vw;
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellow; 
+}
+
+.home-footer-suaConta{
+    width: 250px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;   
+    flex-direction: column;
+}
+
+.home-footer-redeSocial{
+    width: 450px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;   
+    flex-direction: column;
+}
+
+.home-footer-contato{
+    width: 250px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;   
+
+}
+
+.home-footer-box2{
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue; 
+
+}
+
+.home-footer-logo{
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red; 
+}
+
+.home-footer-nomeEventos{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green; 
+}
+
+.home-footer-direitoReservado{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow; 
 }
