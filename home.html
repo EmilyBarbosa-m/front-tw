@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="home.css">
+    <script defer src="home.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <title>home</title>
+</head>
+
+<body>
+    <header id="home-header">
+        <nav id="home-nav">
+
+            <ul className="topnav">
+                <!-- Defina uma classNamee a Ul -->
+
+                <div className="home-logo">
+                    <a href="">
+                        <img className="home-logo-img animated flip" src="img/logo.png" alt="imagm do logo square events">
+                    </a>
+                </div>
+
+
+                <div className="home-buscar">
+                    <div className="home-corpo-buscar">
+
+                        <div className="home-box-icones-bucsar">
+                            <input className="home-input" type="text" placeholder="Digite aqui para buscar">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <li className="home-button-crie-evento-header1">
+                    <a href="#"> Login </a>
+
+                </li>
+
+
+                <li className="home-button-crie-evento-header2">
+
+                    <button className="btnEvento  ">
+                        <a href="#"> + Crie seu Evento </a>
+                    </button>
+
+                </li>
+
+                <li className="icon">
+                    <!--Inclui o ícone do responsivo na lista-->
+                    <a href="javascript:void(0);" onclick="myFunction()">&#9776;
+                    </a>
+                    <!--Chama a função javascript no evento click do icon-->
+                </li>
+
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+    <!-- fim do header -->
+
+    <!-- ==================================== -->
+
+    <!-- banner -->
+
+    <div id="home-banner">
+
+        <img className="home-banner-img" src="img/banner.jpg" alt="banner do site">
+
+        <div id="home-banner-transparente">
+            <img className="home-logoarte-img" src="img/logoarte.png" alt="arte escrita do logo square events">
+        </div>
+    </div>
+
+    <!-- fim do banner -->
+
+    <!-- ==================================== -->
+
+    <!-- destaque -->
+
+    <main id="home-section-destaque">
+        <div className="home-box-texto-destaque">
+            <p className="home-texto-destaque">
+                Eventos em destaque
+            </p>
+            <hr className="home-destaque-hr">
+        </div>
+
+        <div id="home-section-carrosel">
+
+            <!-- ========== código do carrousel  -->
+
+            <div className="slider">
+                <div className="item">
+                    <img src="https://picsum.photos/id/239/550/550" alt="">
+
+                </div>
+
+                <div className="item">
+                    <img src="https://picsum.photos/id/240/550/550" alt="">
+
+                </div>
+                <div className="item">
+                    <img src="https://picsum.photos/id/241/550/550" alt="">
+
+                </div>
+                <div className="item">
+                    <img src="https://picsum.photos/id/242/550/550" alt="">
+
+                </div>
+                <div className="item">
+                    <img src="https://picsum.photos/id/243/550/550" alt="">
+                </div>
+                <div className="item">
+                    <img src="https://picsum.photos/id/250/550/550" alt="">
+
+                </div>
+                <div className="item">
+                    <img src="https://picsum.photos/id/252/550/550" alt="">
+
+                </div>
+                <div className="item">
+                    <img src="https://picsum.photos/id/255/550/550" alt="">
+
+                </div>
+                <div className="item">
+                    <img src="https://picsum.photos/id/247/550/550" alt="">
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ========== código do carrousel  -->
+
+        </div>
+    </main>
+
+    <!-- fim do destaque -->
+
+    <!-- ==================================== -->
+
+    <!-- beneficios -->
+
+    <section id="home-section-beneficios">
+        <div className="home-box-texto-beneficios">
+            <h2 className="home-texto-h2-beneficios">
+                lorem
+            </h2>
+
+            <hr className="home-beneficios-hr">
+
+            <p className="home-texto-p-beneficios">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita dicta asperiores? Tempore velit, quisquam facilis maiores repellat, debitis numquam voluptatibus tenetur sed facere neque praesentium provident, magnam expedita veritatis.
+            </p>
+        </div>
+
+
+        <section id="home-section-img1-beneficios">
+            <div className="home-box-img1-beneficios">
+                <div className="home-caixa-img1-beneficios">
+                </div>
+                <div className="home-div-img1-transparente">
+                    <img className="home-beneficios1-img" src="img/beneficios1.png" alt="imagem ">
+                </div>
+            </div>
+
+            <div className="home-box-texto-beneficios-img1 animated bounceInDown">
+                <p className="home-box-texto-p1-beneficios ">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit laborum suscipit reprehenderit quis. Magnam eaque aut maxime est, excepturi autem non laboriosam veniam veritatis. Nam nobis ipsa repellat maiores?
+                </p>
+
+                <button className="btn">
+                    <a href=""> Inscreva-se </a>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- ========================================== -->
+
+        <section id="home-section-img2-beneficios">
+            <div className="home-box-img2-beneficios">
+                <div className="home-caixa-img2-beneficios">
+                </div>
+                <div className="home-div-img2-transparente">
+                    <img className="home-beneficios2-img" src="img/beneficios2.jpg" alt="imagem ">
+                </div>
+            </div>
+
+            <div className="home-box-texto-beneficios-img2 animated bounceInLeft">
+                <p className="home-box-texto-p2-beneficios">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit laborum suscipit reprehenderit quis. Magnam eaque aut maxime est, excepturi autem non laboriosam veniam veritatis. Nam nobis ipsa repellat maiores?
+                </p>
+
+                <button className="btn btn2">
+                    <a href=""> Inscreva-se </a>
+                </button>
+
+            </div>
+
+        </section>
+    </section>
+
+
+    <section id="home-section-contador">
+        <img className="home-contador-img" src="img/road-2930115.jpg" alt="Imagem de uma mulher ao fundo codificando">
+
+        <div className="home-section-box-contador">
+
+            <div className="home-contador-numeros">
+                <img className="home-contador-icone-img1" src="img/tickets.png" alt="">
+                <img className="home-contador-icone-img2" src="img/mapa.png" alt="">
+                <img className="home-contador-icone-img3" src="img/bandeira.png" alt="">
+                <img className="home-contador-icone-img4" src="img/comunidade.png" alt="">
+            </div>
+
+            <div className="home-contador-descricao">
+                <h3 className="home-contador-descricao-h3-1"> 100 - Eventos Submetidos </h3>
+                <h3 className="home-contador-descricao-h3-2"> 20 - Eventos Realizados </h3>
+                <h3 className="home-contador-descricao-h3-3"> 400 - Comunidades </h3>
+                <h3 className="home-contador-descricao-h3-4"> 08 - Categorias </h3>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section id="home-section-mobile">
+        <div className="home-section-mobile-texto">
+            <p className="home-section-mobile-texto-p-button1">
+                Acompanhe os
+                <button className="buttonMobile1">
+                    <a href=""> Eventos</a>
+                </button>
+            </p>
+            <p className="home-section-mobile-texto-p-button2">
+                pelo seu
+                <button className="buttonMobile2">
+                    <a href="">Celular</a>
+                </button>
+            </p>
+        </div>
+
+        <div className="home-section-mobile-box">
+
+            <div>
+                <img className="home-section-mobile-img" src="img/mobile.png" alt="">
+            </div>
+            <div className="home-section-mobile-box-texto animated bounceInUp">
+                <div className="home-section-mobile-box-texto-p">
+                    <p className="home-section-mobile-box-p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam maxime non sit, dicta laudantium obcaecati quas explicabo repudiandae. Enim nesciunt vitae temporibus distinctio soluta molestias, placeat vero atque ad! Unde.
+                    </p>
+
+                </div>
+
+                <button className="btn home-section-mobile-button-final">
+                    <a href=""> Inscreva-se </a>
+                </button>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ fim mobile
+
+    ============
+
+    footer  -->
+
+    <footer id="home-footer">
+
+        <div className="home-footer-box1">
+
+            <div className="home-footer-titulo">
+                <p className="home-footer-texto estiloFooter">
+                    Square Events
+                </p>
+            </div>
+
+            <div className="home-footer-informacao">
+
+                <div className="home-footer-suaConta">
+                    <p className="estiloFooter">
+                        Sua Conta
+                    </p>
+
+                    <a className="estiloFooter" href=""> Ajuda (FAQ) </a>
+
+                    <a className="estiloFooter" href=""> Cadastre-se </a>
+
+                </div>
+
+                <div className="home-footer-redeSocial">
+                    <p className="estiloFooter">
+                        Redes Socias
+                    </p>
+                    <div>
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+
+                <div className="home-footer-contato">
+                    <p className="estiloFooter">
+                        Contato
+                    </p>
+                    <p className="estiloFooter">
+                        <a href="mailto:contato@thoughtworks.com.br">contato@thoughtworks.com.br</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div className="home-footer-box2">
+
+            <div className="home-footer-logo">
+                <a className="estiloFooter" href="">
+                    <img className="home-logoarte-footer" src="img/logoarte.png" alt="">
+                </a>
+
+
+            </div>
+
+            <div className="home-footer-nomeEventos">
+                <p className="estiloFooter"> @thoughtworks</p>
+                <p className="estiloFooter">
+                    @SquareEvents
+                </p>
+            </div>
+
+            <div className="home-footer-direitoReservado">
+                <p className="estiloFooter">
+                    Todos os direitos reservados
+                </p>
+            </div>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+
+</body>
+
+</html>
