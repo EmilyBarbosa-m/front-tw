@@ -9,11 +9,3 @@ $(".slider").slick({
     autoplay: true,
     autoplaySpeed: 1000,
 });
-
-function menu(id) {
-    if (document.getElementById(id).style.dispaly == "block") {
-        document.getElementById(id).style.dispaly = "none";
-    } else {
-        document.getElementById(id).style.dispaly = "block";
-    }
-}

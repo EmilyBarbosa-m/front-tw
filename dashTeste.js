@@ -1,6 +1,6 @@
-function myFunction() {
-    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-}
+$('.btn-expand-collapse').click(function(e) {
+    $('.navbar-primary').toggleClass('collapsed');
+});
 
 $(".slider").slick({
     centerMode: true,

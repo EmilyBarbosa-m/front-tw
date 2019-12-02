@@ -3,7 +3,6 @@
     margin: 0;
 }
 
-
 input[type="text"] {
     padding: 10px;
     background-color: #fff;
@@ -16,27 +15,28 @@ input[type="text"] {
 }
 
 input {
--webkit-writing-mode: horizontal-tb !important;
-text-rendering: auto;
-color: initial;
-letter-spacing: normal;
-word-spacing: normal;
-text-transform: none;
-text-indent: 0px;
-text-shadow: none;
-display: inline-block;
-text-align: start;
--webkit-appearance: textfield;
-background-color: white;
--webkit-rtl-ordering: logical;
-cursor: text;
-margin: 0em;
-border-radius: 55px;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: #fff;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    border-radius: 55px;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 
 /* ======== botoes do projeto */
 
@@ -50,15 +50,14 @@ a{
     cursor: pointer;
     border-radius: 35px;
     text-align: center;
-  }
+}
 
-  
-  .btn:hover {
+.btn:hover {
     background-color: black;
-    color: white;
-  }
+    color: #f15c2e;
+}
 
-  .buttonMobile1 {
+.buttonMobile1 {
     -ms-transform: translate(-50%, -50%);
     background-color: #f15c2e;
     color: #fff;
@@ -68,23 +67,22 @@ a{
     cursor: pointer;
     text-align: center;
     margin: 3px;
-  }
+}
 
-  .buttonMobile1 a {
+.buttonMobile1 a {
     color: #fff
-  }
+}
 
-  .buttonMobile2 a {
+.buttonMobile2 a {
     color: #fff
-  }
+}
 
-  
-  .buttonMobile1:hover {
+.buttonMobile1:hover {
     background-color: rgb(151, 9, 151);
     color: white;
-  }
+}
 
-  .buttonMobile2 {
+.buttonMobile2 {
     -ms-transform: translate(-50%, -50%);
     background-color: #136d80;
     color: #fff;
@@ -94,16 +92,14 @@ a{
     cursor: pointer;
     text-align: center;
     margin: 3px;
-  }
+}
 
-  
-  .buttonMobile2:hover {
+.buttonMobile2:hover {
     background-color: rgb(230, 27, 27);
     color: white;
-  }
+}
 
-
-  .btnEvento{
+.btnEvento {
     -ms-transform: translate(-50%, -50%);
     background-color: #f1f1f1;
     color: black;
@@ -112,17 +108,30 @@ a{
     border: none;
     cursor: pointer;
     border-radius: 35px;
-    text-align: center; 
-  }
+    text-align: center;
+}
 
-  .btnEvento:hover {
-    background-color: black;
-    color: white;
-  }
+.btnEvento:hover {
+    background-color: #797979;
+    color: #f15c2e !important;
+}
 
-  /* ======== botoes do projeto */
 
-body{
+/* ======== botoes do projeto */
+
+.estiloFooter {
+    color: #fff;
+}
+
+.estiloFooter a {
+    color: #fff;
+}
+
+.estiloFooter p {
+    color: #fff;
+}
+
+body {
     background-color: #fff;
     overflow-x: hidden;
 }
@@ -142,112 +151,135 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-delay: 1s;
 }
-
 
 #home-header {
     height: 120px;
-    width: 99vw;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #fff;
+    border: 1px solid #797979;
+    box-shadow: 0px 20px 40px #797979;
 }
 
 ul.topnav {
-    background:#fff;
-		position: absolute;
-		right: 0;
-		top: 0;
-		height: 6.4 em;
-		line-height: 4em;
-    width:100%;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 6.4 em;
+    line-height: 4em;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-	}
+}
 
-	/* Coloca os itens da lista do Menu lado a lado, e flutua os itens para a esquerda */
-	ul.topnav li {
-		display: flex;
-				/* margin-left: 0.5em; */
-		font-size: 0.9em;
-        float:left;
-    
-	}
 
-	/* Estilo dos links dentro da lista */
-	ul.topnav li a {
-		display: block;
-		color: #000;
-		text-decoration: none;
-		height: 3em;
-		line-height: 3em;
-		/* padding: 0 0.3em 0 0.3em; */
-		outline: 0;
-	}
+/* Coloca os itens da lista do Menu lado a lado, e flutua os itens para a esquerda */
 
-	/* Altera a cor do link quando passa o mouse em cima*/
-	ul.topnav li a:hover {color:#FFB9DC;}
+ul.topnav li {
+    display: flex;
+    /* margin-left: 0.5em; */
+    font-size: 0.9em;
+    float: left;
+}
 
-	/* Esconde os itens da lista quando a resolução da tela for pequena */
-	ul.topnav li.icon {display: none;}
-	
-    /* Quando a tela é menor do que 680 pixels de largura, ocultar todos os itens da lista. Mostra o item da lista que contém o link para abrir e fechar a nav superior (li.icon) */
-    
-		@media screen and (max-width:680px) {
-		  ul.topnav li {display: none;}
-		  ul.topnav li.icon {
-			float: right;/*O ícone será exibido ao lado direito*/
-			display: inline-block;
-		  }
-		}
 
-		/*A classe responsiva é adicionada à ul superior com o JavaScript quando o usuário clica no ícone. Esta classe faz com que os itens principais do menu fiquem ok em telas menores */
-		@media screen and (max-width:680px) {
-		  ul.topnav.responsive {
-			position: relative;
-			background: #fff; /*Fundo cinza*/
-			height:auto;
-			padding-top:15px;
-			padding-bottom:10px;
-			line-height:5px;
-			width:100%;
-			
-		  }
-		  ul.topnav.responsive li.icon {
-			position: absolute;
-			right: 0;
-			top: 0;
-		  }
-		  ul.topnav.responsive li {
-			 text-align:center; 
-			float: none;
-			padding:0;
-			display: inline;
-			
-		  }
-		  ul.topnav.responsive li a {
-			display: block;
-			padding:0;
-			text-align: left;
-			line-height:30px;
-			text-align:center;
-		  }
-        } /*FIM DO MENU RESPONSIVO*/
+/* Estilo dos links dentro da lista */
 
-        /* ================ buscar */
+ul.topnav li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    height: 3em;
+    line-height: 3em;
+    /* padding: 0 0.3em 0 0.3em; */
+    outline: 0;
+}
 
-        .home-buscar {
-            height: 100px;
-            width: 60vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff;
-        }
-        
-        /* .home-corpo-buscar {
+
+/* Altera a cor do link quando passa o mouse em cima*/
+
+ul.topnav li a:hover {
+    color: #FFB9DC;
+}
+
+
+/* Esconde os itens da lista quando a resolução da tela for pequena */
+
+ul.topnav li.icon {
+    display: none;
+}
+
+
+/* Quando a tela é menor do que 680 pixels de largura, ocultar todos os itens da lista. Mostra o item da lista que contém o link para abrir e fechar a nav superior (li.icon) */
+
+@media screen and (max-width:680px) {
+    ul.topnav li {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        /*O ícone será exibido ao lado direito*/
+        display: inline-block;
+    }
+}
+
+
+/*A classe responsiva é adicionada à ul superior com o JavaScript quando o usuário clica no ícone. Esta classe faz com que os itens principais do menu fiquem ok em telas menores */
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+        position: relative;
+        background: #fff;
+        /*Fundo cinza*/
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        line-height: 5px;
+        width: 100%;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        text-align: center;
+        float: none;
+        padding: 0;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        padding: 0;
+        text-align: left;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+
+/*FIM DO MENU RESPONSIVO*/
+
+
+/* ================ buscar */
+
+.home-buscar {
+    height: 100px;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+/* .home-corpo-buscar {
             height: 50px;
             width: 55vw;
             display: flex;
@@ -256,83 +288,85 @@ ul.topnav {
             background-color: #fff;
             border-radius: 55px;
         } */
-        
-        .home-box-icones-bucsar {
-            height: 50px;
-            width: 55vw;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin-right: 35px;
-        }
-        
-        
-        .home-input {
-            height: 35px;
-            width: 640px;
-            margin-left: 15px;
-            border-radius: 50px;
-            border: 1px solid gray;
-        }
-        
-        .home-input::placeholder {
-            display: flex;
-            justify-content: center;
-        }
 
-        /* ============ login crie seu login  */
-        
-        .home-corpo-login {
-            height: 100px;
-            width: 25vw;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            background-color: #fff;
-        }
-        
-        .home-login {
-            height: 50px;
-            width: 75px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff;
-        }
-        
-        .home-crie-evento {
-            height: 95px;
-            width: 125px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff
-        }      
-        
-        .home-button-crie-evento-header1{
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            height: 70px;
-            width: 125px;
-        }
+.home-box-icones-bucsar {
+    height: 50px;
+    width: 55vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 35px;
+}
 
-        .home-button-crie-evento-header2{
-            justify-content: center;
-            align-items: center;
-            display: flex;
-        }
-        
-        .home-button-crieEvento{
-            margin-right: 70px;
-        }
+.home-input {
+    height: 35px;
+    width: 640px;
+    margin-left: 15px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+
+.home-input::placeholder {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ============ login crie seu login  */
+
+.home-corpo-login {
+    height: 100px;
+    width: 25vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+}
+
+.home-login {
+    height: 50px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.home-crie-evento {
+    height: 95px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff
+}
+
+.home-button-crie-evento-header1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 70px;
+    width: 125px;
+}
+
+.home-button-crie-evento-header2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.home-button-crieEvento {
+    margin-right: 70px;
+}
+
+
 /* ================== 
 
 banner   */
 
 #home-banner {
     height: 500px;
-    width: 99vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,7 +391,7 @@ banner   */
 }
 
 .home-logoarte-img {
-    margin-left: -390px;
+    margin-left: -290px;
 }
 
 
@@ -369,7 +403,7 @@ banner   */
 destaque  */
 
 #home-section-destaque {
-    width: 99vw;
+    width: 100vw;
     height: 900px;
     background-color: #fff;
     display: flex;
@@ -405,9 +439,10 @@ destaque  */
     background-color: blue solid;
 }
 
+
 /* ========= carrousel  */
 
-#home-section-carrosel{
+#home-section-carrosel {
     width: 90vw;
     height: 680px;
     background-color: #fff;
@@ -416,39 +451,38 @@ destaque  */
     align-items: center;
 }
 
+
 /* ========= css carrousel  */
 
-.slider{
+.slider {
     width: 100vw;
     height: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #fff; 
+    background-color: #fff;
 }
 
-.slick-slide img{
+.slick-slide img {
     width: 300px;
     height: 320px;
 }
 
-.slick-slide{
+.slick-slide {
     margin: 30px 15px;
 }
 
 .slick-doots li button::before,
-.slick-doots li.slick-active button:before{
+.slick-doots li.slick-active button:before {
     color: #fff;
 }
 
-.slick-doots li button:before{
+.slick-doots li button:before {
     font-size: 15px;
 }
 
 
-
 /* ========= css carrousel  */
-
 
 
 /* fim do destaque */
@@ -459,7 +493,7 @@ destaque  */
 beneficios */
 
 #home-section-beneficios {
-    width: 99vw;
+    width: 100vw;
     height: 2000px;
     background-color: #fff;
     display: flex;
@@ -574,8 +608,7 @@ beneficios imagem 1*/
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition-delay: 4s;
-    transition-duration: 4s;
+    animation-delay: 7s;
 }
 
 .home-box-texto-p1-beneficios {
@@ -588,7 +621,6 @@ beneficios imagem 1*/
     text-align: center;
     margin: 10px;
     border-radius: 20px;
-
 }
 
 
@@ -618,7 +650,7 @@ beneficios imagem 2*/
 .home-box-img2-beneficios {
     width: 80vw;
     height: 600px;
-    background-color:transparent;
+    background-color: transparent;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -662,6 +694,7 @@ beneficios imagem 2*/
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation-delay: 9s;
 }
 
 .home-box-texto-p2-beneficios {
@@ -702,7 +735,7 @@ beneficios imagem 2*/
 
 .home-section-box-contador {
     width: 100vw;
-    height: 250px;
+    height: 300px;
     background-color: rgba(255, 255, 255, 0.233);
     display: flex;
     justify-content: space-around;
@@ -711,69 +744,38 @@ beneficios imagem 2*/
     flex-direction: column;
 }
 
-.home-contador-icones {
-    width: 70vw;
+.home-contador-numeros {
+    width: 90vw;
     height: 70px;
     background-color: transparent;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    /* margin-top: -70px; */
 }
 
 .home-contador-icone-img1 {
     width: 70px;
-    height: 70px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .home-contador-icone-img2 {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .home-contador-icone-img3 {
     width: 70px;
-    height: 70px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .home-contador-icone-img4 {
-    width: 70px;
-    height: 70px;
-}
-
-.home-contador-numeros {
-    width: 70vw;
-    height: 70px;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-}
-
-.home-contador-icone-p1 {
-    width: 70px;
-    height: 50px;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.home-contador-icone-p2 {
-    width: 70px;
-    height: 50px;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.home-contador-icone-p3 {
-    width: 70px;
-    height: 50px;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.home-contador-icone-p4 {
     width: 70px;
     height: 50px;
     font-weight: bold;
@@ -781,7 +783,7 @@ beneficios imagem 2*/
 }
 
 .home-contador-descricao {
-    width: 70vw;
+    width: 90vw;
     height: 70px;
     background-color: transparent;
     display: flex;
@@ -791,31 +793,17 @@ beneficios imagem 2*/
     margin-top: 70px;
 }
 
-.home-contador-descricao-h3-1 {
-    width: 50px;
-    height: 50px;
-}
 
-.home-contador-descricao-h3-2 {
+/* .home-contador-descricao-h3-1 {
     width: 50px;
     height: 50px;
-}
-
-.home-contador-descricao-h3-3 {
-    width: 50px;
-    height: 50px;
-}
-
-.home-contador-descricao-h3-4 {
-    width: 50px;
-    height: 50px;
-}
+} */
 
 
 /* ============= mobile  */
 
 #home-section-mobile {
-    width: 99vw;
+    width: 100vw;
     height: 900px;
     background-color: #fff;
     display: flex;
@@ -827,7 +815,7 @@ beneficios imagem 2*/
 .home-section-mobile-texto {
     width: 80vw;
     height: 200px;
-    background-color:transparent;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -870,6 +858,7 @@ beneficios imagem 2*/
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation-delay: 13s;
     /* margin-left: 230px; */
 }
 
@@ -881,11 +870,11 @@ beneficios imagem 2*/
     align-items: center;
     justify-content: center;
     text-align: center;
-   margin-left: -300px;
+    margin-left: -300px;
     border-radius: 20px;
 }
 
-.home-section-mobile-box-p{
+.home-section-mobile-box-p {
     width: 300px;
     height: 250px;
     display: flex;
@@ -902,9 +891,10 @@ beneficios imagem 2*/
     margin: 0 0 20px 120px;
 }
 
-.home-section-mobile-button-final{
+.home-section-mobile-button-final {
     margin-top: 30px;
 }
+
 
 /* =============  fim mobile  
 
@@ -912,9 +902,20 @@ beneficios imagem 2*/
 
 footer */
 
-#home-footer{
+#home-footer {
     width: 100vw;
-    height: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7899ae;
+    flex-direction: column;
+    color: #fff;
+}
+
+.home-footer-box1 {
+    width: 100vw;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -922,18 +923,7 @@ footer */
     flex-direction: column;
 }
 
-
-.home-footer-box1{
-    width: 100vw;
-    height: 380px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #7899ae;
-    flex-direction: column;
-}
-
-.home-footer-titulo{
+.home-footer-titulo {
     width: 85vw;
     height: 100px;
     display: flex;
@@ -942,84 +932,237 @@ footer */
     background-color: #7899ae;
 }
 
-.home-footer-informacao{
+.home-footer-informacao {
     width: 100vw;
-    height: 280px;
+    height: 180px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #7899ae;
 }
 
-.home-footer-suaConta{
+.home-footer-suaConta {
     width: 250px;
-    height: 270px;
+    height: 120px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: #7899ae;   
+    background-color: #7899ae;
     flex-direction: column;
 }
 
-.home-footer-redeSocial{
+.home-footer-redeSocial {
     width: 450px;
-    height: 270px;
+    height: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7899ae;  
+    background-color: #7899ae;
     flex-direction: column;
 }
 
-.home-footer-contato{
+.home-footer-contato {
     width: 250px;
-    height: 270px;
+    height: 170px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: #7899ae; 
-
+    background-color: #7899ae;
+    flex-direction: column;
 }
 
-.home-footer-box2{
+.home-footer-box2 {
     width: 100vw;
     height: 120px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #407da3; 
-
+    background-color: #407da3;
 }
 
-.home-footer-logo{
+.home-footer-logo {
     width: 250px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #407da3; 
+    background-color: #407da3;
 }
 
-.home-footer-nomeEventos{
+.home-footer-nomeEventos {
     width: 350px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #407da3; 
-    flex-direction: column; 
+    background-color: #407da3;
+    flex-direction: column;
 }
 
-.home-logoarte-footer{
+.home-logoarte-footer {
     width: 190px;
     height: 80px;
 }
 
-.home-footer-direitoReservado{
+.home-footer-direitoReservado {
     width: 350px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #407da3; 
+    background-color: #407da3;
+}
+
+
+/* =========== responsividade  */
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+        position: relative;
+        background: #fff;
+        /*Fundo cinza*/
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        line-height: 5px;
+        width: 100%;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        text-align: center;
+        float: none;
+        padding: 0;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        padding: 0;
+        text-align: left;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #home-header {
+        width: 100vw;
+        height: 200px;
+    }
+    #home-nav {
+        width: 90vw;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .home-logo {
+        margin-left: 15px;
+    }
+    .home-logo-img {
+        margin-bottom: 40px;
+        height: 60px;
+        width: 50px;
+    }
+    .home-button-crie-evento-header1 {
+        flex-direction: column;
+        font-size: 10px;
+        display: block;
+        margin-bottom: 60px;
+    }
+    .home-button-crie-evento-header2 {
+        display: block;
+        margin-bottom: 20px;
+    }
+    /* ========== menu responsivo finalizado  */
+    .home-logoarte-img {
+        /* margin: auto; */
+        height: 80px;
+        width: 150px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 25%;
+    }
+    .home-texto-h2-beneficios {
+        margin-bottom: 10px;
+    }
+    .home-beneficios-hr {
+        margin-bottom: 70px;
+    }
+    .home-texto-p-beneficios {
+        margin-bottom: 20px;
+    }
+    /* ============== beneficios  */
+    #home-section-img1-beneficios {
+        flex-grow: unset;
+        width: 80%;
+        margin-top: 2em;
+        flex-direction: column;
+    }
+    .home-caixa-img1-beneficios {
+        margin-left: 1px;
+    }
+    .home-beneficios1-img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .home-box-texto-p1-beneficios {
+        width: 80%;
+    }
+    #home-section-img2-beneficios {
+        flex-grow: unset;
+        width: 80%;
+        margin-top: 2em;
+        flex-direction: column;
+    }
+    .home-caixa-img2-beneficios {
+        margin-left: 1px;
+    }
+    .home-beneficios2-img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .home-box-texto-p2-beneficios {
+        width: 80%;
+    }
+    .home-section-mobile-texto {
+        width: 90%;
+    }
+    .btn2 {
+        margin-bottom: 30px;
+    }
+    .home-section-mobile-box {
+        flex-grow: unset;
+        width: 80%;
+        margin-top: 2em;
+        flex-direction: column;
+    }
+    .home-section-mobile-img {
+        height: 280px;
+        width: 300px;
+        margin-top: 50px;
+    }
+    .home-section-mobile-box-texto {
+        margin-bottom: 50px;
+    }
+    .home-section-mobile-box-texto-p {
+        height: 320px;
+        width: 350px;
+        margin-left: 10px;
+    }
+    .home-section-mobile-button-final {
+        margin-bottom: 80px;
+    }
+    /* ========= footer  */
+    .home-logoarte-footer {
+        height: 70px;
+        width: 120px;
+    }
 }

@@ -1,0 +1,608 @@
+        * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    input[type="text"] {
+        padding: 10px;
+        background-color: #fff;
+        font: 12px Lucida, Verdana, sans-serif;
+        color: #999;
+        border: #ddd 1px solid;
+        border-radius: 3px;
+        background: #fff url(https://cdn1.iconfinder.com/data/icons/bijou/10/Search.png) no-repeat 90% center;
+        border-radius: 55px;
+    }
+    
+    input {
+        -webkit-writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        color: initial;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        -webkit-appearance: textfield;
+        background-color: #fff;
+        -webkit-rtl-ordering: logical;
+        cursor: text;
+        margin: 0em;
+        border-radius: 55px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    /* ======== botoes do projeto */
+    
+    .btn {
+        -ms-transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        color: black;
+        font-size: 16px;
+        padding: 16px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 35px;
+        text-align: center;
+    }
+    
+    .btn:hover {
+        background-color: black;
+        color: #f15c2e;
+    }
+    
+    .buttonMobile1 {
+        -ms-transform: translate(-50%, -50%);
+        background-color: #f15c2e;
+        color: #fff;
+        font-size: 16px;
+        padding: 14px 26px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        margin: 3px;
+    }
+    
+    .buttonMobile1 a {
+        color: #fff
+    }
+    
+    .buttonMobile2 a {
+        color: #fff
+    }
+    
+    .buttonMobile1:hover {
+        background-color: rgb(151, 9, 151);
+        color: white;
+    }
+    
+    .buttonMobile2 {
+        -ms-transform: translate(-50%, -50%);
+        background-color: #136d80;
+        color: #fff;
+        font-size: 16px;
+        padding: 14px 26px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        margin: 3px;
+    }
+    
+    .buttonMobile2:hover {
+        background-color: rgb(230, 27, 27);
+        color: white;
+    }
+    
+    .btnEvento {
+        -ms-transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        color: black;
+        font-size: 16px;
+        padding: 5px 5px;
+        border: none;
+        cursor: pointer;
+        border-radius: 35px;
+        text-align: center;
+    }
+    
+    .btnEvento:hover {
+        background-color: #797979;
+        color: #f15c2e !important;
+    }
+    /* ======== botoes do projeto */
+    
+    .estiloFooter {
+        color: #fff;
+    }
+    
+    .estiloFooter a {
+        color: #fff;
+    }
+    
+    .estiloFooter p {
+        color: #fff;
+    }
+    
+    body {
+        background-color: #fff;
+        overflow-x: hidden;
+    }
+    
+    .home-logo {
+        height: 100px;
+        width: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    
+    .home-logo-img {
+        height: 90px;
+        width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-delay: 1s;
+    }
+    
+    #home-header {
+        height: 120px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #797979;
+        /* box-shadow: 0px 20px 40px #797979; */
+    }
+    
+    ul.topnav {
+        background: #fff;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 6.4 em;
+        line-height: 4em;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /* Coloca os itens da lista do Menu lado a lado, e flutua os itens para a esquerda */
+    
+    ul.topnav li {
+        display: flex;
+        /* margin-left: 0.5em; */
+        font-size: 0.9em;
+        float: left;
+    }
+    /* Estilo dos links dentro da lista */
+    
+    ul.topnav li a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+        height: 3em;
+        line-height: 3em;
+        /* padding: 0 0.3em 0 0.3em; */
+        outline: 0;
+    }
+    /* Altera a cor do link quando passa o mouse em cima*/
+    
+    ul.topnav li a:hover {
+        color: #FFB9DC;
+    }
+    /* Esconde os itens da lista quando a resolução da tela for pequena */
+    
+    ul.topnav li.icon {
+        display: none;
+    }
+    /* Quando a tela é menor do que 680 pixels de largura, ocultar todos os itens da lista. Mostra o item da lista que contém o link para abrir e fechar a nav superior (li.icon) */
+    
+    @media screen and (max-width:680px) {
+        ul.topnav li {
+            display: none;
+        }
+        ul.topnav li.icon {
+            float: right;
+            /*O ícone será exibido ao lado direito*/
+            display: inline-block;
+        }
+    }
+    /*A classe responsiva é adicionada à ul superior com o JavaScript quando o usuário clica no ícone. Esta classe faz com que os itens principais do menu fiquem ok em telas menores */
+    
+    @media screen and (max-width:680px) {
+        ul.topnav.responsive {
+            position: relative;
+            background: #fff;
+            /*Fundo cinza*/
+            height: auto;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            line-height: 5px;
+            width: 100%;
+        }
+        ul.topnav.responsive li.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        ul.topnav.responsive li {
+            text-align: center;
+            float: none;
+            padding: 0;
+            display: inline;
+        }
+        ul.topnav.responsive li a {
+            display: block;
+            padding: 0;
+            text-align: left;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+    /*FIM DO MENU RESPONSIVO*/
+    /* ================ buscar */
+    
+    .home-buscar {
+        height: 100px;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    /* .home-corpo-buscar {
+            height: 50px;
+            width: 55vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 55px;
+        } */
+    
+    .home-box-icones-bucsar {
+        height: 50px;
+        width: 55vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 35px;
+    }
+    
+    .home-input {
+        height: 35px;
+        width: 640px;
+        margin-left: 15px;
+        border-radius: 50px;
+        border: 1px solid gray;
+    }
+    
+    .home-input::placeholder {
+        display: flex;
+        justify-content: center;
+    }
+    /* ============ login crie seu login  */
+    
+    .home-corpo-login {
+        height: 100px;
+        width: 25vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fff;
+    }
+    
+    .home-login {
+        height: 50px;
+        width: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    
+    .home-crie-evento {
+        height: 95px;
+        width: 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff
+    }
+    
+    .home-button-crie-evento-header1 {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 70px;
+        width: 125px;
+    }
+    
+    .home-button-crie-evento-header2 {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    .home-button-crieEvento {
+        margin-right: 70px;
+    }
+    /* ================== 
+
+        
+/* ==================================== 
+
+destaque  */
+    
+    #home-section-destaque {
+        width: 100vw;
+        height: 1200px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .home-box-texto-destaque {
+        width: 80vw;
+        height: 120px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .home-texto-destaque {
+        width: 50vw;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home-destaque-hr {
+        width: 50vw;
+        height: 0.3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue solid;
+    }
+    /* ========= carrousel  */
+    
+    #home-section-carrosel {
+        width: 90vw;
+        height: 680px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ========= css carrousel  */
+    
+    .slider {
+        width: 100vw;
+        height: 400px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+    }
+    
+    .slick-slide img {
+        width: 300px;
+        height: 320px;
+    }
+    
+    .slick-slide {
+        margin: 30px 15px;
+    }
+    
+    .slick-doots li button::before,
+    .slick-doots li.slick-active button:before {
+        color: #fff;
+    }
+    
+    .slick-doots li button:before {
+        font-size: 15px;
+    }
+    /* ========= css carrousel  */
+    /* fim do destaque */
+    /* ================footer  */
+    
+    #home-footer {
+        width: 100vw;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #7899ae;
+        flex-direction: column;
+        color: #fff;
+    }
+    
+    .home-footer-box1 {
+        width: 100vw;
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #7899ae;
+        flex-direction: column;
+    }
+    
+    .home-footer-titulo {
+        width: 85vw;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #7899ae;
+    }
+    
+    .home-footer-informacao {
+        width: 100vw;
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #7899ae;
+    }
+    
+    .home-footer-suaConta {
+        width: 250px;
+        height: 120px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #7899ae;
+        flex-direction: column;
+    }
+    
+    .home-footer-redeSocial {
+        width: 450px;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #7899ae;
+        flex-direction: column;
+    }
+    
+    .home-footer-contato {
+        width: 250px;
+        height: 170px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #7899ae;
+        flex-direction: column;
+    }
+    
+    .home-footer-box2 {
+        width: 100vw;
+        height: 120px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #407da3;
+    }
+    
+    .home-footer-logo {
+        width: 250px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #407da3;
+    }
+    
+    .home-footer-nomeEventos {
+        width: 350px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #407da3;
+        flex-direction: column;
+    }
+    
+    .home-logoarte-footer {
+        width: 190px;
+        height: 80px;
+    }
+    
+    .home-footer-direitoReservado {
+        width: 350px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #407da3;
+    }
+    /* =========== responsividade  */
+    
+    @media screen and (max-width:680px) {
+        ul.topnav.responsive {
+            position: relative;
+            background: #fff;
+            /*Fundo cinza*/
+            height: auto;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            line-height: 5px;
+            width: 100%;
+        }
+        ul.topnav.responsive li.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        ul.topnav.responsive li {
+            text-align: center;
+            float: none;
+            padding: 0;
+            display: inline;
+        }
+        ul.topnav.responsive li a {
+            display: block;
+            padding: 0;
+            text-align: left;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width: 376px) {
+        #home-header {
+            width: 100vw;
+            height: 200px;
+        }
+        #home-nav {
+            width: 90vw;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .home-logo {
+            margin-left: 15px;
+        }
+        .home-logo-img {
+            margin-bottom: 40px;
+            height: 60px;
+            width: 50px;
+        }
+        .home-button-crie-evento-header1 {
+            flex-direction: column;
+            font-size: 10px;
+            display: block;
+            margin-bottom: 60px;
+        }
+        .home-button-crie-evento-header2 {
+            display: block;
+            margin-bottom: 20px;
+        }
+        /* ========== menu responsivo finalizado  */
+        #home-section-carrosel {
+            flex-grow: unset;
+            width: 80%;
+        }
+        .img-carrousel {
+            flex-grow: unset;
+            height: 150px;
+            width: 170px;
+        }
+        /* ========= footer  */
+        .home-logoarte-footer {
+            height: 70px;
+            width: 120px;
+        }
