@@ -54,13 +54,13 @@ a {
 
 .btn:hover {
     background-color: black;
-    color: #f15c2e;
+    color: #5500ff;
 }
 
 .buttonMobile1 {
     -ms-transform: translate(-50%, -50%);
-    background-color: #f15c2e;
-    color: #fff;
+    background-color: #f1f1f1;
+    color: #000;
     font-size: 16px;
     padding: 14px 26px;
     border: none;
@@ -70,22 +70,30 @@ a {
 }
 
 .buttonMobile1 a {
-    color: #fff
+    color: #000;
 }
 
 .buttonMobile2 a {
-    color: #fff
+    color: #000;
+}
+
+.buttonMobile1 a:hover {
+    color: #fff;
+}
+
+.buttonMobile2 a:hover {
+    color: #fff;
 }
 
 .buttonMobile1:hover {
-    background-color: rgb(151, 9, 151);
+    background-color: #5500ff;
     color: white;
 }
 
 .buttonMobile2 {
     -ms-transform: translate(-50%, -50%);
-    background-color: #136d80;
-    color: #fff;
+    background-color: #f1f1f1;
+    color: #5500ff;
     font-size: 16px;
     padding: 14px 26px;
     border: none;
@@ -95,14 +103,14 @@ a {
 }
 
 .buttonMobile2:hover {
-    background-color: rgb(230, 27, 27);
+    background-color: #5500ff;
     color: white;
 }
 
 .btnEvento {
     -ms-transform: translate(-50%, -50%);
     background-color: #f1f1f1;
-    color: black;
+    color: #5500ff;
     font-size: 16px;
     padding: 5px 5px;
     border: none;
@@ -112,8 +120,8 @@ a {
 }
 
 .btnEvento:hover {
-    background-color: #797979;
-    color: #f15c2e !important;
+    background-color: #f1f1f1;
+    color: #5500ff !important;
 }
 
 
@@ -193,7 +201,7 @@ ul.topnav li {
 
 ul.topnav li a {
     display: block;
-    color: #000;
+    color: #5500ff;
     text-decoration: none;
     height: 3em;
     line-height: 3em;
@@ -428,6 +436,8 @@ destaque  */
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #5500ff;
+    font-size: 30px;
 }
 
 .home-destaque-hr {
@@ -436,7 +446,8 @@ destaque  */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue solid;
+    background-color: #5500ff;
+    color: #5500ff;
 }
 
 
@@ -495,7 +506,7 @@ beneficios */
 #home-section-beneficios {
     width: 100vw;
     height: 2000px;
-    background-color: #fff;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -505,7 +516,7 @@ beneficios */
 .home-box-texto-beneficios {
     width: 80vw;
     height: 150px;
-    background-color: #fff;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -519,6 +530,8 @@ beneficios */
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #5500ff;
+    text-shadow: 1px 1px 1px #9071ce;
 }
 
 .home-beneficios-hr {
@@ -527,7 +540,8 @@ beneficios */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue solid;
+    color: #5500ff;
+    background-color: #5500ff;
 }
 
 .home-texto-p-beneficios {
@@ -536,6 +550,7 @@ beneficios */
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #5500ff;
 }
 
 
@@ -546,16 +561,17 @@ beneficios imagem 1*/
 #home-section-img1-beneficios {
     width: 100vw;
     height: 900px;
-    background-color: #f15c2e;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 #home-box-img1-beneficios {
     width: 100vw;
     height: 900px;
-    background-color: #f15c2e;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -581,6 +597,7 @@ beneficios imagem 1*/
     margin-left: -90px;
     position: relative;
     border-radius: 10px;
+    box-shadow: 20px 20px 20px #f8f8f8;
 }
 
 .home-div-img1-transparente {
@@ -598,6 +615,7 @@ beneficios imagem 1*/
     width: 390px;
     height: 390px;
     border-radius: 10px;
+    box-shadow: 20px 20px 20px #f8f8f8;
 }
 
 .home-box-texto-beneficios-img1 {
@@ -614,13 +632,14 @@ beneficios imagem 1*/
 .home-box-texto-p1-beneficios {
     width: 600px;
     height: 300px;
-    background-color: #fff;
+    background-color: #5500ff;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 10px;
     border-radius: 20px;
+    box-shadow: 10px 10px 20px #9071ce;
 }
 
 
@@ -631,7 +650,7 @@ beneficios imagem 2*/
 #home-section-img2-beneficios {
     width: 100vw;
     height: 900px;
-    background-color: #fff;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -641,7 +660,7 @@ beneficios imagem 2*/
 #home-box-img2-beneficios {
     width: 100vw;
     height: 900px;
-    background-color: #fff;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -667,6 +686,7 @@ beneficios imagem 2*/
     margin-left: -90px;
     position: relative;
     border-radius: 10px;
+    box-shadow: 20px 20px 20px #f8f8f8;
 }
 
 .home-div-img2-transparente {
@@ -684,12 +704,14 @@ beneficios imagem 2*/
     width: 390px;
     height: 390px;
     border-radius: 10px;
+    /* border: 2px solid #797979; */
+    box-shadow: 40px 40px 20px #f8f8f8;
 }
 
 .home-box-texto-beneficios-img2 {
     width: 80vw;
     height: 300px;
-    background-color: #fff;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -700,13 +722,14 @@ beneficios imagem 2*/
 .home-box-texto-p2-beneficios {
     width: 600px;
     height: 300px;
-    background-color: #f15c2e;
+    background-color: #5500ff;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 10px;
     border-radius: 20px;
+    box-shadow: 10px 10px 20px #9071ce;
 }
 
 
@@ -720,12 +743,13 @@ beneficios imagem 2*/
 #home-section-contador {
     width: 100vw;
     height: 400px;
-    background-color: transparent;
+    background-color: #5500ff;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     position: relative;
+    box-shadow: 10px 10px 20px #9071ce;
 }
 
 .home-contador-img {
@@ -736,12 +760,13 @@ beneficios imagem 2*/
 .home-section-box-contador {
     width: 100vw;
     height: 300px;
-    background-color: rgba(255, 255, 255, 0.233);
+    background-color: transparent;
     display: flex;
     justify-content: space-around;
     position: absolute;
     align-items: center;
     flex-direction: column;
+
 }
 
 .home-contador-numeros {
@@ -805,7 +830,7 @@ beneficios imagem 2*/
 #home-section-mobile {
     width: 100vw;
     height: 900px;
-    background-color: #fff;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -844,7 +869,7 @@ beneficios imagem 2*/
 .home-section-mobile-box {
     width: 100vw;
     height: 550px;
-    background-color: rgba(255, 255, 255, 0.192);
+    background-color: transparent;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -853,7 +878,7 @@ beneficios imagem 2*/
 .home-section-mobile-box-texto {
     width: 55vw;
     height: 540px;
-    background-color: rgba(255, 255, 255, 0.192);
+    background-color: transparent
     display: flex;
     justify-content: center;
     align-items: center;
@@ -865,13 +890,14 @@ beneficios imagem 2*/
 .home-section-mobile-box-texto-p {
     width: 600px;
     height: 300px;
-    background-color: #f15c2e;
+    background-color: #5500ff;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left: -300px;
+    margin-left: -10px;
     border-radius: 20px;
+    box-shadow: 10px 10px 20px #9071ce;
 }
 
 .home-section-mobile-box-p {
@@ -889,10 +915,11 @@ beneficios imagem 2*/
     justify-content: center;
     align-items: center;
     margin: 0 0 20px 120px;
+    box-shadow: 0px 20px 40px #797979;
 }
 
 .home-section-mobile-button-final {
-    margin-top: 30px;
+    margin: auto;
 }
 
 
@@ -1087,13 +1114,13 @@ footer */
         margin-left: 25%;
     }
     .home-texto-h2-beneficios {
-        margin-bottom: 10px;
+        margin-top: 10px;
     }
     .home-beneficios-hr {
         margin-bottom: 70px;
     }
     .home-texto-p-beneficios {
-        margin-bottom: 20px;
+        margin-top: 20px;
     }
     /* ============== beneficios  */
     #home-section-img1-beneficios {
@@ -1147,22 +1174,31 @@ footer */
     .home-section-mobile-img {
         height: 280px;
         width: 300px;
-        margin-top: 50px;
+        margin: auto;
     }
     .home-section-mobile-box-texto {
         margin-bottom: 50px;
     }
     .home-section-mobile-box-texto-p {
         height: 320px;
-        width: 350px;
-        margin-left: 10px;
+        width: 225px;
+        display: flex;
+        justify-content: 20px;
+        justify-content: center;
+        margin-top: 20px;
+
+
     }
-    .home-section-mobile-button-final {
+    /* .home-section-mobile-button-final {
         margin-bottom: 80px;
-    }
+    } */
+
     /* ========= footer  */
     .home-logoarte-footer {
         height: 70px;
         width: 120px;
     }
-}
+
+    .home-box-texto-beneficios{
+        background-color: transparent;
+    }

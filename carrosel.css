@@ -20,16 +20,26 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: aqua; 
+    background-color:#fff; 
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border:  2solid black;
+    /* box-shadow: 30px 20px 15px #f8f8f8; */
+
 }
 
 .slick-slide img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 220px;
 }
 
 .slick-slide{
-    margin: 30px 15px;
+    /* margin: 30px 15px; */
 }
 
 .slick-doots li button::before,
