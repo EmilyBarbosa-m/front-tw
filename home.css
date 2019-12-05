@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.item-transparente{
+    display: none;
+}
+
 input[type="text"] {
     padding: 10px;
     background-color: #fff;
@@ -450,6 +454,17 @@ destaque  */
     color: #5500ff;
 }
 
+.home-card-hr {
+    width: 300px;
+    height: 0.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #797979;
+    color: #797979;
+}
+
+
 
 /* ========= carrousel  */
 
@@ -465,32 +480,119 @@ destaque  */
 
 /* ========= css carrousel  */
 
-.slider {
-    width: 100vw;
+.slider{
+    width: 90vw;
     height: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #fff;
+    background-color:#fff; 
 }
 
-.slick-slide img {
-    width: 300px;
-    height: 320px;
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border:  2solid black;
+    /* box-shadow: 30px 20px 15px #f8f8f8; */
+
 }
 
-.slick-slide {
-    margin: 30px 15px;
+.slick-slide img{
+    width: 200px;
+    height: 220px;
 }
+
 
 .slick-doots li button::before,
-.slick-doots li.slick-active button:before {
+.slick-doots li.slick-active button:before{
     color: #fff;
 }
 
-.slick-doots li button:before {
+.slick-doots li button:before{
     font-size: 15px;
 }
+
+.item-carrosel{
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #797979;
+    padding: 10px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.carrosel-card-categoria{
+    margin-top: 10px;
+}
+
+.carrosel-card-titulo{
+    margin-top: 10px;
+}
+
+.home-destaque-hr {
+    width: 50vw;
+    height: 0.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #797979;
+    color: #797979;
+}
+
+.separator{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.separator p i { margin-right: 4px; }
+
+.btn-type {
+    width: 65%;
+    height: 15px;
+    border-right: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+/* .btn-views {
+	width: 35%;
+    border-right: 1px solid #d6d6d6;
+    height: 15px;
+}
+.btn-likes {
+	width: 35%;
+    border-right: 1px solid #d6d6d6;
+    height: 15px;
+} */
+.btn-details {
+	width: 35%;
+	padding-left: 10px;
+    display: inline;
+    height: 15px;
+}
+
+.btn-type a,
+.btn-views,
+.btn-likes,
+.btn-details a {
+	font-size: 12px;
+	color: #777777;
+}
+
+.btn-type a:hover,
+.btn-details a:hover {
+	color: #444444;
+}
+
 
 
 /* ========= css carrousel  */
@@ -640,6 +742,7 @@ beneficios imagem 1*/
     margin: 10px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px #9071ce;
+    font-size: 26px;
 }
 
 
@@ -730,6 +833,7 @@ beneficios imagem 2*/
     margin: 10px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px #9071ce;
+    font-size: 26px;
 }
 
 
@@ -854,6 +958,7 @@ beneficios imagem 2*/
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
 }
 
 .home-section-mobile-texto-p-button2 {
@@ -864,6 +969,7 @@ beneficios imagem 2*/
     justify-content: center;
     align-items: baseline;
     margin-bottom: 70px;
+    font-size: 18px;
 }
 
 .home-section-mobile-box {
@@ -898,6 +1004,7 @@ beneficios imagem 2*/
     margin-left: -10px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px #9071ce;
+    font-size: 26px;
 }
 
 .home-section-mobile-box-p {
@@ -919,7 +1026,7 @@ beneficios imagem 2*/
 }
 
 .home-section-mobile-button-final {
-    margin: auto;
+    margin-left: 200px;
 }
 
 
@@ -1122,6 +1229,20 @@ footer */
     .home-texto-p-beneficios {
         margin-top: 20px;
     }
+
+    p .home-texto-p-beneficios-p2 {
+        /* margin-top: 5px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #5500ff;
+        display: none;
+    }
+
+    .home-texto-p-beneficios-p2{
+        display: none;
+    }
+
     /* ============== beneficios  */
     #home-section-img1-beneficios {
         flex-grow: unset;
@@ -1140,6 +1261,8 @@ footer */
     }
     .home-box-texto-p1-beneficios {
         width: 80%;
+        text-align: center;
+        font-size: 25px;
     }
     #home-section-img2-beneficios {
         flex-grow: unset;
@@ -1161,6 +1284,7 @@ footer */
     }
     .home-section-mobile-texto {
         width: 90%;
+        display: none;
     }
     .btn2 {
         margin-bottom: 30px;
@@ -1201,4 +1325,25 @@ footer */
 
     .home-box-texto-beneficios{
         background-color: transparent;
+    }
+
+    #home-section-carrosel{
+        background-color: transparent;
+    }
+
+    #home-section-carrosel{
+       display: none; 
+    } 
+
+    .item-transparente{
+        width: 320px;
+        height: 700px;
+        background-color: #5500ff;
+        display: unset;
+        /* margin-bottom: 40px; */
+        margin-top: 40px;
+    }
+
+    .home-section-mobile-button-final{
+        margin: auto;
     }
