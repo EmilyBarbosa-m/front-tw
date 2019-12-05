@@ -51,3 +51,8 @@
     font-size: 15px;
 }
 
+.item-carrosel{
+    box-sizing: border-box;
+    background-color: aqua;
+}
+

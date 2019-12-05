@@ -8,10 +8,9 @@ body {
 }
 
 /* ========= btn ** */
-
-.btnAprovar {
+.btnApadrinhar {
     -ms-transform: translate(-50%, -50%);
-    background-color: red;
+    background-color: yellow;
     color: black;
     font-size: 16px;
     padding: 16px 30px;
@@ -19,17 +18,17 @@ body {
     cursor: pointer;
     border-radius: 35px;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 0px 10px 10px -10px;
 }
 
-.btnAprovar:hover {
-    background-color: rgb(184, 53, 53);
+.btnApadrinhar:hover {
+    background-color: rgb(214, 214, 64);
     color: #fff;
 }
 
-.btnReprovar {
+.btnEmail {
     -ms-transform: translate(-50%, -50%);
-    background-color: green;
+    background-color: #5500ff;
     color: black;
     font-size: 16px;
     padding: 16px 30px;
@@ -39,8 +38,8 @@ body {
     text-align: center;
 }
 
-.btnReprovar:hover {
-    background-color: rgb(62, 152, 62);
+.btnEmail:hover {
+    background-color: #8256da;
     color: #fff;
 }
 
