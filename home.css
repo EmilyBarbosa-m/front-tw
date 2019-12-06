@@ -139,6 +139,34 @@ a {
     color: #fff;
 }
 
+.home-icones-footer{
+    width: 200px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.home-icone-facebook{
+    width: 40px;
+    height: 50px;
+}
+
+.home-icone-instagram{
+    width: 40px;
+    height: 50px;
+}
+
+.home-icone-linkedin{
+    width: 40px;
+    height: 50px;
+}
+
+.home-icone-email{
+    width: 40px;
+    height: 50px;
+}
+
 .estiloFooter p {
     color: #fff;
 }
@@ -984,7 +1012,7 @@ beneficios imagem 2*/
 .home-section-mobile-box-texto {
     width: 55vw;
     height: 540px;
-    background-color: transparent
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1347,3 +1375,33 @@ footer */
     .home-section-mobile-button-final{
         margin: auto;
     }
+
+    .home-icones-footer{
+        display: flex;
+        height: 40px;
+    }
+
+    .home-footer-contato{
+        display: none;
+    }
+
+    .home-icone-facebook{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .home-icone-instagram{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .home-icone-linkedin{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .home-icone-email{
+        width: 15px;
+        height: 15px;
+    }
+}

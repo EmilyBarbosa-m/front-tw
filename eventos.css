@@ -1,251 +1,307 @@
-        * {
-        padding: 0;
-        margin: 0;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.item-transparente{
+    display: none;
+}
+
+input[type="text"] {
+    padding: 10px;
+    background-color: #fff;
+    font: 12px Lucida, Verdana, sans-serif;
+    color: #999;
+    border: #ddd 1px solid;
+    border-radius: 3px;
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/bijou/10/Search.png) no-repeat 90% center;
+    border-radius: 55px;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: #fff;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    border-radius: 55px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ======== botoes do projeto */
+
+.btn {
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: black;
+    color: #5500ff;
+}
+
+.buttonMobile1 {
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 16px;
+    padding: 14px 26px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 3px;
+}
+
+.buttonMobile1 a {
+    color: #000;
+}
+
+.buttonMobile2 a {
+    color: #000;
+}
+
+.buttonMobile1 a:hover {
+    color: #fff;
+}
+
+.buttonMobile2 a:hover {
+    color: #fff;
+}
+
+.buttonMobile1:hover {
+    background-color: #5500ff;
+    color: white;
+}
+
+.buttonMobile2 {
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: #5500ff;
+    font-size: 16px;
+    padding: 14px 26px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 3px;
+}
+
+.buttonMobile2:hover {
+    background-color: #5500ff;
+    color: white;
+}
+
+.btnEvento {
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: #5500ff;
+    font-size: 16px;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.btnEvento:hover {
+    background-color: #f1f1f1;
+    color: #5500ff !important;
+}
+
+/* ==== btn do projeto */
+
+.estiloFooter {
+    color: #fff;
+}
+
+.estiloFooter a {
+    color: #fff;
+}
+
+.home-icones-footer{
+    width: 200px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.home-icone-facebook{
+    width: 40px;
+    height: 50px;
+}
+
+.home-icone-instagram{
+    width: 40px;
+    height: 50px;
+}
+
+.home-icone-linkedin{
+    width: 40px;
+    height: 50px;
+}
+
+.home-icone-email{
+    width: 40px;
+    height: 50px;
+}
+
+.estiloFooter p {
+    color: #fff;
+}
+
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.home-logo {
+    height: 100px;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.home-logo-img {
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-delay: 1s;
+}
+
+#home-header {
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #797979;
+    box-shadow: 0px 20px 40px #797979;
+}
+
+ul.topnav {
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 6.4 em;
+    line-height: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Coloca os itens da lista do Menu lado a lado, e flutua os itens para a esquerda */
+
+ul.topnav li {
+    display: flex;
+    /* margin-left: 0.5em; */
+    font-size: 0.9em;
+    float: left;
+}
+
+
+/* Estilo dos links dentro da lista */
+
+ul.topnav li a {
+    display: block;
+    color: #5500ff;
+    text-decoration: none;
+    height: 3em;
+    line-height: 3em;
+    /* padding: 0 0.3em 0 0.3em; */
+    outline: 0;
+}
+
+
+/* Altera a cor do link quando passa o mouse em cima*/
+
+ul.topnav li a:hover {
+    color: #FFB9DC;
+}
+
+
+/* Esconde os itens da lista quando a resolução da tela for pequena */
+
+ul.topnav li.icon {
+    display: none;
+}
+
+
+/* Quando a tela é menor do que 680 pixels de largura, ocultar todos os itens da lista. Mostra o item da lista que contém o link para abrir e fechar a nav superior (li.icon) */
+
+@media screen and (max-width:680px) {
+    ul.topnav li {
+        display: none;
     }
-    
-    input[type="text"] {
-        padding: 10px;
-        background-color: #fff;
-        font: 12px Lucida, Verdana, sans-serif;
-        color: #999;
-        border: #ddd 1px solid;
-        border-radius: 3px;
-        background: #fff url(https://cdn1.iconfinder.com/data/icons/bijou/10/Search.png) no-repeat 90% center;
-        border-radius: 55px;
-    }
-    
-    input {
-        -webkit-writing-mode: horizontal-tb !important;
-        text-rendering: auto;
-        color: initial;
-        letter-spacing: normal;
-        word-spacing: normal;
-        text-transform: none;
-        text-indent: 0px;
-        text-shadow: none;
+    ul.topnav li.icon {
+        float: right;
+        /*O ícone será exibido ao lado direito*/
         display: inline-block;
-        text-align: start;
-        -webkit-appearance: textfield;
-        background-color: #fff;
-        -webkit-rtl-ordering: logical;
-        cursor: text;
-        margin: 0em;
-        border-radius: 55px;
     }
-    
-    a {
-        text-decoration: none;
-    }
-    /* ======== botoes do projeto */
-    
-    .btn {
-        -ms-transform: translate(-50%, -50%);
-        background-color: #f1f1f1;
-        color: black;
-        font-size: 16px;
-        padding: 16px 30px;
-        border: none;
-        cursor: pointer;
-        border-radius: 35px;
-        text-align: center;
-    }
-    
-    .btn:hover {
-        background-color: black;
-        color: #f15c2e;
-    }
-    
-    .buttonMobile1 {
-        -ms-transform: translate(-50%, -50%);
-        background-color: #f15c2e;
-        color: #fff;
-        font-size: 16px;
-        padding: 14px 26px;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-        margin: 3px;
-    }
-    
-    .buttonMobile1 a {
-        color: #fff
-    }
-    
-    .buttonMobile2 a {
-        color: #fff
-    }
-    
-    .buttonMobile1:hover {
-        background-color: rgb(151, 9, 151);
-        color: white;
-    }
-    
-    .buttonMobile2 {
-        -ms-transform: translate(-50%, -50%);
-        background-color: #136d80;
-        color: #fff;
-        font-size: 16px;
-        padding: 14px 26px;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-        margin: 3px;
-    }
-    
-    .buttonMobile2:hover {
-        background-color: rgb(230, 27, 27);
-        color: white;
-    }
-    
-    .btnEvento {
-        -ms-transform: translate(-50%, -50%);
-        background-color: #f1f1f1;
-        color: black;
-        font-size: 16px;
-        padding: 5px 5px;
-        border: none;
-        cursor: pointer;
-        border-radius: 35px;
-        text-align: center;
-    }
-    
-    .btnEvento:hover {
-        background-color: #797979;
-        color: #f15c2e !important;
-    }
-    /* ======== botoes do projeto */
-    
-    .estiloFooter {
-        color: #fff;
-    }
-    
-    .estiloFooter a {
-        color: #fff;
-    }
-    
-    .estiloFooter p {
-        color: #fff;
-    }
-    
-    body {
-        background-color: #fff;
-        overflow-x: hidden;
-    }
-    
-    .home-logo {
-        height: 100px;
-        width: 5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #fff;
-    }
-    
-    .home-logo-img {
-        height: 90px;
-        width: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation-delay: 1s;
-    }
-    
-    #home-header {
-        height: 120px;
-        width: 100vw;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: #fff;
-        border: 1px solid #797979;
-        /* box-shadow: 0px 20px 40px #797979; */
-    }
-    
-    ul.topnav {
+}
+
+
+/*A classe responsiva é adicionada à ul superior com o JavaScript quando o usuário clica no ícone. Esta classe faz com que os itens principais do menu fiquem ok em telas menores */
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+        position: relative;
         background: #fff;
+        /*Fundo cinza*/
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        line-height: 5px;
+        width: 100%;
+    }
+    ul.topnav.responsive li.icon {
         position: absolute;
         right: 0;
         top: 0;
-        height: 6.4 em;
-        line-height: 4em;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
     }
-    /* Coloca os itens da lista do Menu lado a lado, e flutua os itens para a esquerda */
-    
-    ul.topnav li {
-        display: flex;
-        /* margin-left: 0.5em; */
-        font-size: 0.9em;
-        float: left;
+    ul.topnav.responsive li {
+        text-align: center;
+        float: none;
+        padding: 0;
+        display: inline;
     }
-    /* Estilo dos links dentro da lista */
-    
-    ul.topnav li a {
+    ul.topnav.responsive li a {
         display: block;
-        color: #000;
-        text-decoration: none;
-        height: 3em;
-        line-height: 3em;
-        /* padding: 0 0.3em 0 0.3em; */
-        outline: 0;
+        padding: 0;
+        text-align: left;
+        line-height: 30px;
+        text-align: center;
     }
-    /* Altera a cor do link quando passa o mouse em cima*/
-    
-    ul.topnav li a:hover {
-        color: #FFB9DC;
-    }
-    /* Esconde os itens da lista quando a resolução da tela for pequena */
-    
-    ul.topnav li.icon {
-        display: none;
-    }
-    /* Quando a tela é menor do que 680 pixels de largura, ocultar todos os itens da lista. Mostra o item da lista que contém o link para abrir e fechar a nav superior (li.icon) */
-    
-    @media screen and (max-width:680px) {
-        ul.topnav li {
-            display: none;
-        }
-        ul.topnav li.icon {
-            float: right;
-            /*O ícone será exibido ao lado direito*/
-            display: inline-block;
-        }
-    }
-    /*A classe responsiva é adicionada à ul superior com o JavaScript quando o usuário clica no ícone. Esta classe faz com que os itens principais do menu fiquem ok em telas menores */
-    
-    @media screen and (max-width:680px) {
-        ul.topnav.responsive {
-            position: relative;
-            background: #fff;
-            /*Fundo cinza*/
-            height: auto;
-            padding-top: 15px;
-            padding-bottom: 10px;
-            line-height: 5px;
-            width: 100%;
-        }
-        ul.topnav.responsive li.icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        ul.topnav.responsive li {
-            text-align: center;
-            float: none;
-            padding: 0;
-            display: inline;
-        }
-        ul.topnav.responsive li a {
-            display: block;
-            padding: 0;
-            text-align: left;
-            line-height: 30px;
-            text-align: center;
-        }
-    }
+}
+
     /*FIM DO MENU RESPONSIVO*/
     /* ================ buscar */
     
@@ -334,16 +390,48 @@
     .home-button-crieEvento {
         margin-right: 70px;
     }
-    /* ================== 
+    
 
+    /* =========== eventos banner  */
+
+    .eventos-banner-section{
+        width: 100vw;
+        height: 900px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         
-/* ==================================== 
+    }
 
-destaque  */
+    .eventos-banner-img{
+        width: 100vw;
+        height: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .eventos-banner-img{
+        width: 100vw;
+        /* height: 450px; */
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eventos-p-texto-transparente{
+        margin-bottom: 20px;
+        color: #6a3fbf;    
+        font-size: 29px;
+    }
+
+    /* =========================== */
     
     #home-section-destaque {
         width: 100vw;
-        height: 1200px;
+        height: 900px;
         background-color: #fff;
         display: flex;
         justify-content: center;
@@ -367,6 +455,8 @@ destaque  */
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #5500ff;
+        font-size: 25px;
     }
     
     .home-destaque-hr {
@@ -375,13 +465,14 @@ destaque  */
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: blue solid;
+        background-color: #5500ff;
+        color: #5500ff;
     }
     /* ========= carrousel  */
     
     #home-section-carrosel {
         width: 90vw;
-        height: 680px;
+        height: 700px;
         background-color: #fff;
         display: flex;
         justify-content: center;
@@ -389,6 +480,136 @@ destaque  */
     }
     /* ========= css carrousel  */
     
+    /* ========= carrousel  */
+
+#home-section-carrosel {
+    width: 90vw;
+    height: 680px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ========= css carrousel  */
+
+.slider{
+    width: 90vw;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#fff; 
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border:  2solid black;
+    /* box-shadow: 30px 20px 15px #f8f8f8; */
+
+}
+
+.slick-slide img{
+    width: 200px;
+    height: 220px;
+}
+
+
+.slick-doots li button::before,
+.slick-doots li.slick-active button:before{
+    color: #fff;
+}
+
+.slick-doots li button:before{
+    font-size: 15px;
+}
+
+.item-carrosel{
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #797979;
+    padding: 10px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+.carrosel-card-categoria{
+    margin-top: 10px;
+}
+
+.carrosel-card-titulo{
+    margin-top: 10px;
+}
+
+.home-destaque-hr {
+    width: 50vw;
+    height: 0.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #797979;
+    color: #797979;
+}
+
+.separator{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.separator p i { margin-right: 4px; }
+
+.btn-type {
+    width: 65%;
+    height: 15px;
+    border-right: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+/* .btn-views {
+	width: 35%;
+    border-right: 1px solid #d6d6d6;
+    height: 15px;
+}
+.btn-likes {
+	width: 35%;
+    border-right: 1px solid #d6d6d6;
+    height: 15px;
+} */
+.btn-details {
+	width: 35%;
+	padding-left: 10px;
+    display: inline;
+    height: 15px;
+}
+
+.btn-type a,
+.btn-views,
+.btn-likes,
+.btn-details a {
+	font-size: 12px;
+	color: #777777;
+}
+
+.btn-type a:hover,
+.btn-details a:hover {
+	color: #444444;
+}
+
+
+
+/* ========= css carrousel  */
     
     /* ========= css carrousel  */
     /* fim do destaque */
@@ -504,80 +725,233 @@ destaque  */
         align-items: center;
         background-color: #407da3;
     }
-    /* =========== responsividade  */
     
-    @media screen and (max-width:680px) {
-        ul.topnav.responsive {
-            position: relative;
-            background: #fff;
-            /*Fundo cinza*/
-            height: auto;
-            padding-top: 15px;
-            padding-bottom: 10px;
-            line-height: 5px;
-            width: 100%;
-        }
-        ul.topnav.responsive li.icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        ul.topnav.responsive li {
-            text-align: center;
-            float: none;
-            padding: 0;
-            display: inline;
-        }
-        ul.topnav.responsive li a {
-            display: block;
-            padding: 0;
-            text-align: left;
-            line-height: 30px;
-            text-align: center;
-        }
+    /* =========== responsividade  */
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+        position: relative;
+        background: #fff;
+        /*Fundo cinza*/
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        line-height: 5px;
+        width: 100%;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        text-align: center;
+        float: none;
+        padding: 0;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        padding: 0;
+        text-align: left;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #home-header {
+        width: 100vw;
+        height: 200px;
+    }
+    #home-nav {
+        width: 90vw;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .home-logo {
+        margin-left: 15px;
+    }
+    .home-logo-img {
+        margin-bottom: 40px;
+        height: 60px;
+        width: 50px;
+    }
+    .home-button-crie-evento-header1 {
+        flex-direction: column;
+        font-size: 10px;
+        display: block;
+        margin-bottom: 60px;
+    }
+    .home-button-crie-evento-header2 {
+        display: block;
+        margin-bottom: 20px;
+    }
+    /* ========== menu responsivo finalizado  */
+    .home-logoarte-img {
+        /* margin: auto; */
+        height: 80px;
+        width: 150px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 25%;
+    }
+    .home-texto-h2-beneficios {
+        margin-top: 10px;
+    }
+    .home-beneficios-hr {
+        margin-bottom: 70px;
+    }
+    .home-texto-p-beneficios {
+        margin-top: 20px;
+    }
+
+    p .home-texto-p-beneficios-p2 {
+        /* margin-top: 5px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #5500ff;
+        display: none;
+    }
+
+    .home-texto-p-beneficios-p2{
+        display: none;
+    }
+
+    /* ============== beneficios  */
+    #home-section-img1-beneficios {
+        flex-grow: unset;
+        width: 80%;
+        margin-top: 2em;
+        flex-direction: column;
+    }
+    .home-caixa-img1-beneficios {
+        margin-left: 1px;
+    }
+    .home-beneficios1-img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .home-box-texto-p1-beneficios {
+        width: 80%;
+        text-align: center;
+        font-size: 25px;
+    }
+    #home-section-img2-beneficios {
+        flex-grow: unset;
+        width: 80%;
+        margin-top: 2em;
+        flex-direction: column;
+    }
+    .home-caixa-img2-beneficios {
+        margin-left: 1px;
+    }
+    .home-beneficios2-img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .home-box-texto-p2-beneficios {
+        width: 80%;
+    }
+    .home-section-mobile-texto {
+        width: 90%;
+        display: none;
+    }
+    .btn2 {
+        margin-bottom: 30px;
+    }
+    .home-section-mobile-box {
+        flex-grow: unset;
+        width: 80%;
+        margin-top: 2em;
+        flex-direction: column;
+    }
+    .home-section-mobile-img {
+        height: 280px;
+        width: 300px;
+        margin: auto;
+    }
+    .home-section-mobile-box-texto {
+        margin-bottom: 50px;
+    }
+    .home-section-mobile-box-texto-p {
+        height: 320px;
+        width: 225px;
+        display: flex;
+        justify-content: 20px;
+        justify-content: center;
+        margin-top: 20px;
+
+
+    }
+    /* .home-section-mobile-button-final {
+        margin-bottom: 80px;
+    } */
+
+    /* ========= footer  */
+    .home-logoarte-footer {
+        height: 70px;
+        width: 120px;
+    }
+
+    .home-box-texto-beneficios{
+        background-color: transparent;
+    }
+
+    #home-section-carrosel{
+        background-color: transparent;
+    }
+
+    #home-section-carrosel{
+       display: none; 
+    } 
+
+    .item-transparente{
+        width: 320px;
+        height: 700px;
+        background-color: #5500ff;
+        display: unset;
+        /* margin-bottom: 40px; */
+        margin-top: 40px;
+    }
+
+    .home-section-mobile-button-final{
+        margin: auto;
+    }
+
+    .home-icones-footer{
+        display: flex;
+        height: 40px;
+    }
+
+    .home-footer-contato{
+        display: none;
+    }
+
+    .home-icone-facebook{
+        width: 15px;
+        height: 15px;
     }
     
-    @media screen and (max-width: 376px) {
-        #home-header {
-            width: 100vw;
-            height: 200px;
-        }
-        #home-nav {
-            width: 90vw;
-            height: 200px;
-            display: flex;
-            justify-content: space-around;
-        }
-        .home-logo {
-            margin-left: 15px;
-        }
-        .home-logo-img {
-            margin-bottom: 40px;
-            height: 60px;
-            width: 50px;
-        }
-        .home-button-crie-evento-header1 {
-            flex-direction: column;
-            font-size: 10px;
-            display: block;
-            margin-bottom: 60px;
-        }
-        .home-button-crie-evento-header2 {
-            display: block;
-            margin-bottom: 20px;
-        }
-        /* ========== menu responsivo finalizado  */
-        #home-section-carrosel {
-            flex-grow: unset;
-            width: 80%;
-        }
-        .img-carrousel {
-            flex-grow: unset;
-            height: 150px;
-            width: 170px;
-        }
-        /* ========= footer  */
-        .home-logoarte-footer {
-            height: 70px;
-            width: 120px;
-        }
+    .home-icone-instagram{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .home-icone-linkedin{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .home-icone-email{
+        width: 15px;
+        height: 15px;
+    }
+}
